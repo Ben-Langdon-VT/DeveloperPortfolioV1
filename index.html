@@ -7,81 +7,89 @@
     <title>Ben Langdon Portfolio</title>
 </head>
 <body>
-    <header>
-        <!-- not sure if necessary check to make sure -->
-    </header>
     <nav class = "navBar" id = "navMain">
-        <!-- links to bio, project page,  -->
-        <!-- must be sticky, must show up on every page of website
-            possible to do it as a side think, maybe functionality to make it pop out when clicked -->
-            <a href="#homeLink" class = "homeLink">HOME</a>
+            <a href="#homeLink" class = "navLink">HOME</a>
             <a href="#bioLink" class = "navLink">BIO</a>
             <a href="#projectLink" class = "navLink">PROJECTS</a>
     </nav>
     <div class = "content" id = "homeContent">
+        <!-- Smooth scrolling anchor tag -->
         <a id = "homeLink"></a>
-        <h1 id="homeName">Ben Langdon</h1>
+        <h1 id = "homeName">Ben Langdon</h1>
         <p class = "bodyText" id = "homeText">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed tempora numquam maxime possimus repellat reiciendis eaque magni soluta mollitia?
+            Aspiring Software developer from Burlington VT. Interested in web design, ai and robotics.
         </p>
-        <img src="https://picsum.photos/200/300" alt="Home Image">
+        <img src="./Media/Images/HomeImage.png" alt="Home Image">
     </div>
-    
-    <div id = "bio">
+    <div class = "content" id = "bioContent">
         <a id="bioLink"></a>
-        <h1>Bio Title</h1>
-        <h2>Maybe my name again</h2>
-        <p>brief background of what I have skills in</p>
-        <ul>
-            <p>List</p>
-            <p>Of</p>
-            <p>Interests</p>
-        </ul>
+        <div id = "bioFlex">
+            <div class = "bioItem" id = "bioInfo">
+                <h1 id = "bioTitle">About Me:</h1>
+                <p></p>
+            </div>
+            <img src="./Media/Images/ProfilePic.jpg" alt="" class = "BioItem" id = "profilePic">
+        </div>
+        <div id = "bioLists">
+            <div class = "bioItem" id = "skills">
+                <h2>Skills</h2>
+                <ul>
+                    <p>HTML/ CSS</p>
+                    <p>Javascript</p>
+                    <p>Python</p>
+                    <p>C#</p>
+                    <p>Open XML</p>
+                    <p>Pytorch</p>
+                </ul>
+            </div>
+            <div class = "bioItem" id = "interests">
+                <h2>Interests</h2>
+                <ul id = "interests">
+                    <p>Hiking</p>
+                    <p>Sailing</p>
+                    <p>Fantasy Books</p>
+                    <p>Video Games</p>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div id = "projects">
+    <div class = content id = "projectContent">
         <a id="projectLink"></a>
         <h1>Project Page Title</h1>
         <div id = "projectArray">
             <div class = "project" id = "project1">
-                <h2>Project Title</h2>
+                <h2>Web Store</h2>
                 <img src="https://picsum.photos/200" alt="project image">
-                <p>blah blah blah</p>
+                <p>Placeholder for web store project</p>
             </div>
             <div class = "project" id = "project2">
-                <h2>Project Title</h2>
+                <h2>Capstone</h2>
                 <img src="https://picsum.photos/200" alt="project image">
-                <p>blah blah blah</p>
+                <p>Placeholder for capstone project.</p>
             </div>
             <div class = "project" id = "project3">
-                <h2>Project Title</h2>
+                <h2>CRITR</h2>
                 <img src="https://picsum.photos/200" alt="project image">
-                <p>blah blah blah</p>
+                <p>Tool for automatic generation of word documents</p>
             </div>
             <div class = "project" id = "project4">
-                <h2>Project Title</h2>
+                <h2>Simple Analytic Model</h2>
                 <img src="https://picsum.photos/200" alt="project image">
-                <p>blah blah blah</p>
-            </div>
-            <div class = "project" id = "project5">
-                <h2>Project Title</h2>
-                <img src="https://picsum.photos/200" alt="project image">
-                <p>blah blah blah</p>
+                <p>Simple data analysis with pytorch. (need to ask if I have permission to publish this to github so link will not work)</p>
             </div>
         </div>
     </div>
-    <div id = "contacts">
+    <div class = "content" id = "contactContent">
         <a id="contactLink"></a>
         <h1>Contact Page</h1>
         <ul>
             <!-- link github and stuff, maybe make a linked in -->
-            <p>Contact info 1</p>
-            <p>Contact info 2</p>
-            <p>Contact info 3</p>
-            <p>Contact info 4</p>
+            <a href = "mailto: benplangdon@gmail.com" class = "contactLink">Email</a>
+            <a href = "https://github.com/Ben-Langdon-VT/DeveloperPortfolioV1" class = "contactLink">Github</a>
         </ul>
     </div>
     <footer class = "footer">
-        <a href="#contactLink" class = "navLink">CONTACT</a>
+        <a href="#contactLink" class = "navLink" id = "contactLink">CONTACT</a>
     </footer>
 </body>
 </html>
