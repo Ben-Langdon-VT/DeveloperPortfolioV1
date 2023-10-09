@@ -14,22 +14,74 @@
         <!-- links to bio, project page,  -->
         <!-- must be sticky, must show up on every page of website
             possible to do it as a side think, maybe functionality to make it pop out when clicked -->
-            <a href="./bio.html" class = "navLink">BIO</a>
-            <a href="./projects.html" class = "navLink">CONTACT</a>
-            <a href="./contact.html" class = "navLink">PROJECTS</a>
+            <a href="#homeLink" class = "homeLink">HOME</a>
+            <a href="#bioLink" class = "navLink">BIO</a>
+            <a href="#projectLink" class = "navLink">PROJECTS</a>
     </nav>
     <div class = "content" id = "homeContent">
+        <a id = "homeLink"></a>
         <h1 id="homeName">Ben Langdon</h1>
         <p class = "bodyText" id = "homeText">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed tempora numquam maxime possimus repellat reiciendis eaque magni soluta mollitia?
         </p>
         <img src="https://picsum.photos/200/300" alt="Home Image">
     </div>
+    
+    <div id = "bio">
+        <a id="bioLink"></a>
+        <h1>Bio Title</h1>
+        <h2>Maybe my name again</h2>
+        <p>brief background of what I have skills in</p>
+        <ul>
+            <p>List</p>
+            <p>Of</p>
+            <p>Interests</p>
+        </ul>
+    </div>
+    <div id = "projects">
+        <a id="projectLink"></a>
+        <h1>Project Page Title</h1>
+        <div id = "projectArray">
+            <div class = "project" id = "project1">
+                <h2>Project Title</h2>
+                <img src="https://picsum.photos/200" alt="project image">
+                <p>blah blah blah</p>
+            </div>
+            <div class = "project" id = "project2">
+                <h2>Project Title</h2>
+                <img src="https://picsum.photos/200" alt="project image">
+                <p>blah blah blah</p>
+            </div>
+            <div class = "project" id = "project3">
+                <h2>Project Title</h2>
+                <img src="https://picsum.photos/200" alt="project image">
+                <p>blah blah blah</p>
+            </div>
+            <div class = "project" id = "project4">
+                <h2>Project Title</h2>
+                <img src="https://picsum.photos/200" alt="project image">
+                <p>blah blah blah</p>
+            </div>
+            <div class = "project" id = "project5">
+                <h2>Project Title</h2>
+                <img src="https://picsum.photos/200" alt="project image">
+                <p>blah blah blah</p>
+            </div>
+        </div>
+    </div>
+    <div id = "contacts">
+        <a id="contactLink"></a>
+        <h1>Contact Page</h1>
+        <ul>
+            <!-- link github and stuff, maybe make a linked in -->
+            <p>Contact info 1</p>
+            <p>Contact info 2</p>
+            <p>Contact info 3</p>
+            <p>Contact info 4</p>
+        </ul>
+    </div>
     <footer class = "footer">
-        <!--
-            contact info:
-                -remember not to directly link phone or email, Kate said not to.
-        -->
+        <a href="#contactLink" class = "navLink">CONTACT</a>
     </footer>
 </body>
 </html>

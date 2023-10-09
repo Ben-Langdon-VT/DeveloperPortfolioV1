@@ -1,17 +1,15 @@
-body {
-    width: 100%;
-    height: 100%;
-}
-
 /* Defaults */
 * {
     color: black;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0px;
+    width: 100%;
+    height: 100%;
 }
-
 .navBar {
     margin: 0px;
     position: fixed;
@@ -73,4 +71,11 @@ body {
     transition-property: width;
     transition-duration: .5s;
     width: 80%
+}
+
+#area1 {
+    height: 1000px;
+}
+#area2 {
+    height: 1000px;
 }
